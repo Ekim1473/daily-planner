@@ -40,7 +40,7 @@ CalanderUtilities = {
   //displaying the divs according to hours past,present and future.
   GetAllHours: function () {
     var presentHour = new Date().getHours();
-    for (let hour = 7; hour < 18; hour++) {
+    for (let hour = 7; hour < 23; hour++) {
       var actualTime = hour.length == 1 ? "0" + hour : hour;
       if (hour > 11) {
         actualTime = actualTime + ":00"
